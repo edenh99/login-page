@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function validate(){
+            const inputUsername = document.getElementById("username").value;
+            const inputPassword = document.getElementById("password").value;
+            if (inputUsername.equals("admin") && inputPassword === 123){
+                const enterName = prompt("Please enter your name:");
+                alert("Login successful");
+                window.location.href = ('/loginPageBuild.html');
+            }
+            else if (!inputUsername.equals("admin")){
+
+            }
+            else if (!inputPassword.equals("123")){
+
+            }
+        }
+    </script>
+    <title>" I'm building login page"</title>
+    <link rel="stylesheet" href="loginPageStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="bg-img">
+        <form class="container">
+            <h1>Login</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter Username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter Password" required>
+
+            <button type="submit" class="btn" onclick="validate()">Login</button>
+        </form>
+    </div>
+</body>
+</html>
+

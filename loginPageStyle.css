@@ -1,0 +1,91 @@
+body, html{
+    height: 200%;
+    width: 200%;
+    top: -50%;
+    left: -50%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    margin-top: 0;
+    margin-left: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.bg-img{
+    background-image: url("photoForMySite.jpg");
+    min-height: 50%;
+    min-width: 50%;
+    top: 25%; left:25%;
+    right:25%; bottom: 25%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    margin: auto;
+    max-width: 380px;
+    padding: 16px;
+    background-color: rgba(198, 214, 247, 0.81);
+    border-radius: 8px;
+}
+form[type=text], form[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+}
+
+input[type=text]:focus, input[type=password]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+.btn{
+    position: relative;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 16px;
+}
+.btn:hover {
+    background-color: #108c1d;
+    color: white;
+}
+.btn:after{
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+.btn:active:after{
+    padding: 0;
+    margin: 0;
+    opacity: 65%;
+    transition: 0.5s;
+}
